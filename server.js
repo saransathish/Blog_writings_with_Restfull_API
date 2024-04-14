@@ -4,8 +4,11 @@ import axios from "axios";
 
 const app = express();
 const port = 3000;
-const API_URL = "http://localhost:4000";
+// local host
+// const API_URL = "http://localhost:4000";
 
+//server deployed
+const API_URl = "https://api-5wjx.onrender.com";
 app.use(express.static("public"));
 
 app.use(bodyParser.urlencoded({ extended: true }));
